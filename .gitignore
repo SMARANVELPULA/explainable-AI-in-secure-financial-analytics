@@ -1,0 +1,35 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.env/
+venv/
+ENV/
+backend/.env/
+
+# ML files
+*.h5
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# Node
+node_modules/
+dist/
+build/
+
+# logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# environment variables
+.env.local
+.env.development
+.env.production
