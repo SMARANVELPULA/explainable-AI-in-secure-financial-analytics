@@ -1,181 +1,223 @@
-🛡️ SecureScan AI — Explainable Fraud Detection
------------------------------------------------
+# 🛡️ SecureScan AI – Explainable Fraud Detection System
 
+### Explainable AI for Financial Risk Monitoring using XGBoost & SHAP
 
-📌 Overview
-------------
-SecureScan AI is a high-fidelity fraud detection dashboard that uses Explainable Artificial Intelligence (XAI) to bridge the gap between complex machine learning predictions and human understanding.
+SecureScan AI is an end-to-end fraud detection platform that combines Machine Learning and Explainable AI (XAI) to identify suspicious financial transactions while providing transparent, human-readable explanations behind every prediction.
 
-Instead of just telling whether a transaction is fraud, the system explains why it is fraud.
+Unlike traditional black-box fraud detection systems, SecureScan AI not only predicts whether a transaction is fraudulent but also explains the factors influencing the decision, enabling analysts, banks, and compliance teams to trust and validate AI-driven outcomes.
 
-By integrating XGBoost with SHAP (SHapley Additive exPlanations), the platform produces interpretable AI decisions that analysts, banks, and compliance teams can trust.
+---
 
-🚀 Key Features
-----------------
+## 🚀 Project Highlights
 
-Real-time Risk Audit
+✅ Explainable Fraud Detection using XGBoost & SHAP
 
-Instantly evaluates transactions
+✅ Real-Time Transaction Risk Assessment
 
-Displays fraud probability meter
+✅ Human-Readable AI Explanations
 
-Provides a clear verdict banner (Safe / Suspicious / Fraud)
+✅ Interactive Fraud Analytics Dashboard
 
-🧠 Explainable Narratives
---------------------------
+✅ FastAPI + React Full-Stack Architecture
 
-Converts ML reasoning into human-readable explanations
+✅ Research Publication Project
+
+---
+
+## 🎯 Problem Statement
+
+Financial institutions process millions of transactions daily, making manual fraud detection impossible at scale.
+
+Traditional machine learning models often provide highly accurate predictions but lack transparency, creating challenges for:
+
+* Fraud Analysts
+* Compliance Teams
+* Auditors
+* Financial Institutions
+
+SecureScan AI addresses this challenge by combining predictive accuracy with explainability, helping stakeholders understand why a transaction was flagged as suspicious.
+
+---
+
+## 🧠 Core Features
+
+### Real-Time Risk Assessment
+
+* Instant transaction evaluation
+* Fraud probability scoring
+* Risk classification:
+
+  * Safe
+  * Suspicious
+  * Fraudulent
+
+### Explainable AI Narratives
+
+Converts machine learning outputs into natural language explanations.
 
 Example:
 
-“Transaction amount deviated significantly from user's normal spending pattern.”
+> "The transaction amount significantly exceeded the user's historical spending pattern, increasing fraud risk."
 
-📊 SHAP Visualizations
------------------------
+### SHAP-Based Interpretability
 
-Interactive feature contribution graphs
+* Feature contribution analysis
+* Interactive explanation charts
+* Positive and negative impact visualization
+* Transparent model reasoning
 
-Shows mathematical push & pull behind predictions
+### Interactive Analytics Dashboard
 
-Analysts can see which factor caused the fraud flag
+* Modern React interface
+* Dynamic charts and insights
+* Responsive dark-mode design
+* Analyst-friendly workflow
 
-🧩 Modern XAI Architecture
----------------------------
+---
 
-FastAPI Python backend
+## 🛠️ Technology Stack
 
-React + Vite frontend dashboard
+### Machine Learning
 
-End-to-end explainable ML pipeline
+* XGBoost
+* SHAP
+* Scikit-Learn
+* Pandas
+* NumPy
 
-🌙 Responsive Dark-Mode UI
+### Backend
 
-Micro-animations
+* Python
+* FastAPI
+* Joblib
 
-Optimized for large screens & dashboards
+### Frontend
 
-🛠️ Tech Stack
+* React
+* Vite
+* Framer Motion
+* Chart.js
+* Lucide React
 
--------------
-Backend
--------
+### Development Tools
 
-🐍 Python
+* Git
+* GitHub
+* Jupyter Notebook
 
-⚡ FastAPI
+---
 
-🌲 XGBoost (Fraud Classification)
+## 🏗️ System Architecture
 
-🔎 SHAP (Explainable AI)
+<img width="981" height="565" alt="image" src="https://github.com/user-attachments/assets/8cb700b8-426b-4d5e-86e3-0635959a69ee" />
 
-📦 Joblib
+---
 
-🐼 Pandas
+## 📊 Explainable AI in Action
 
-🧪 Scikit-Learn Pipeline
+SecureScan AI identifies how each feature influences the final prediction.
 
-Frontend
----------
-⚛️ React (Vite)
+| Feature                      | Impact               |
+| ---------------------------- | -------------------- |
+| High Transaction Amount      | Increases Fraud Risk |
+| New Device                   | Increases Fraud Risk |
+| Unknown Location             | Increases Fraud Risk |
+| Trusted Merchant             | Reduces Fraud Risk   |
+| Frequent Transaction Pattern | Reduces Fraud Risk   |
 
-🎞️ Framer Motion
+This allows analysts to understand not only the prediction but also the reasoning behind it.
 
-📈 Chart.js
+---
 
-🎨 Lucide React Icons
+## 📈 Dashboard Preview
 
-🌑 Dark UI Dashboard
+### Risk Assessment Dashboard
 
-🏗️ System Architecture
------------------------
-The system follows a 4-stage intelligent pipeline:
-
-Input
-
-User enters transaction details
-(Amount, Time, Network, Device, Location, Merchant)
-
-Processing
-
-FastAPI cleans and transforms data
-
-Scikit-Learn preprocessing pipeline applied
-
-Inference
-
-XGBoost predicts fraud probability
-
-Explanation
-
-SHAP calculates feature contribution
-
-React dashboard visualizes reasoning
-
-📥 Installation
-1️⃣ Clone Repository
-git clone (https://github.com/SMARANVELPULA/explainable-AI-in-secure-financial-analytics)
-cd securescan-ai
-2️⃣ Backend Setup
-cd backend
-pip install -r requirements.txt
-uvicorn app:app --reload
-
-Backend will run at:
-
-http://127.0.0.1:8000
-3️⃣ Frontend Setup
-cd frontend
-npm install
-npm run dev
-
-Frontend will run at:
-
-http://localhost:5173
-📊 How the Model Makes Decisions
-
-SecureScan AI does not behave like a black-box model.
-
-For every transaction, SHAP computes the contribution score of each feature:
-
-Feature	Effect
-High Transaction Amount	Increases fraud probability
-Known Device	Decreases fraud probability
-New Location	Increases fraud probability
-Frequent Merchant	Decreases fraud probability
-
-The dashboard visualizes this using bar graphs and explanation reports.
-
-🎯 Use Cases
-
-Banking & FinTech fraud monitoring
-
-Payment gateway transaction auditing
-
-Compliance & regulatory analytics
-
-Cybersecurity risk analysis
-
-Explainable AI research demonstrations
-
-👤 Author
-----------
-**Smaran Velpula
-Computer Science Engineering (Data Science)
-Ace Engineering College**
-
-💻 Web Development
-
-📊 Data Analytics
-
-🤖 Machine Learning & Explainable AI
+<img width="1880" height="779" alt="Screenshot 2026-02-28 153543" src="https://github.com/user-attachments/assets/0c81218a-437f-44cf-83cf-ff92c1209696" />
 
 
-⭐ Support
+### SHAP Explanation Visualization
 
-If you found this project useful:
+<img width="1739" height="857" alt="Screenshot 2026-02-28 001009" src="https://github.com/user-attachments/assets/dde0946c-16ca-43f2-8a29-bb694c17bce6" />
 
-Star ⭐ the repository
 
-Share with friends
+### Fraud Probability Analysis
 
-Use it in research / college projects
+<img width="1898" height="699" alt="Screenshot 2026-02-28 153427" src="https://github.com/user-attachments/assets/c0775d68-b606-4749-b296-5316d1039b4a" />
+
+
+---
+
+## 📚 Research Publication
+
+This project was developed as part of a research initiative focused on Explainable Artificial Intelligence in Financial Fraud Detection.
+
+### Research Focus
+
+* Explainable AI
+* Financial Risk Analytics
+* Fraud Detection Systems
+* Model Interpretability
+* Trustworthy Machine Learning
+
+---
+
+## 🎯 Applications
+
+### Banking & Financial Services
+
+* Transaction Monitoring
+* Fraud Prevention
+* Risk Assessment
+* Regulatory Reporting
+* Explainable Decision Systems
+
+---
+
+## 🔮 Future Enhancements
+
+* Real-Time Streaming Fraud Detection
+* Deep Learning Integration
+* Multi-Language Explanation Engine
+* Cloud Deployment
+* Role-Based Access Control
+* Automated Alert System
+
+---
+
+## 💡 Skills Demonstrated
+
+* Machine Learning
+* Explainable AI (XAI)
+* XGBoost
+* SHAP
+* Fraud Analytics
+* FastAPI
+* React
+* Data Visualization
+* Financial Risk Modeling
+* Full-Stack Development
+
+---
+
+## 👨‍💻 Author
+
+### Velpula Smaran
+
+B.Tech Computer Science Engineering (Data Science)
+
+📍 Hyderabad, India
+
+📧 Email: [smaran6762@gmail.com](mailto:smaran6762@gmail.com)
+
+💼 LinkedIn: https://www.linkedin.com/in/velpula-smaran/
+
+🐙 GitHub: https://github.com/SMARANVELPULA
+
+---
+
+### Open To Opportunities
+
+🎯 Data Analyst • Data Scientist • AI/ML Engineer • Business Analyst • GenAI & Prompt Engineering Roles
+
+If you found this project useful, consider giving it a ⭐ and connecting with me on LinkedIn.
